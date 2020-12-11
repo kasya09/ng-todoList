@@ -1,0 +1,55 @@
+<!--<div>-->
+<!--  <input-->
+<!--    type="text"-->
+<!--    class="form-control"-->
+<!--    placeholder="title.."-->
+<!--    [(ngModel)]="title"-->
+<!--  >-->
+<!--  <input-->
+<!--    type="text"-->
+<!--    class="form-control"-->
+<!--    placeholder="text.."-->
+<!--    [(ngModel)]="text"-->
+<!--  >-->
+
+<!--  <button class="btn" (click)="addPost()">Add post</button>-->
+<!--</div>-->
+
+<section id="form-container">
+  <div class="container">
+    <div class="row">
+      <form>
+        <div class="form-row">
+
+          <input type="text" name="id" id="id" class="id" hidden>
+
+          <div class="form-group col-md-2">
+            <label for="title">Title</label>
+            <input type="text" name="message" id="title" class="form-control" [(ngModel)]="title">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="message">Create task</label>
+            <input type="text" name="message" id="message" class="form-control" [(ngModel)]="text">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="priority">Priority</label>
+            <select name="priority" id="priority" class="form-control" [(ngModel)]="priority">
+              <option value="Low">Low</option>
+              <option value="Minor">Minor</option>
+              <option value="Major">Major</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+
+          <div class="col-auto">
+            <button class="btn btn-primary" id="btn-submit" (click)="addPost()">
+              Submit
+            </button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

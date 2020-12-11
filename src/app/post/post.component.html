@@ -1,0 +1,33 @@
+<!--<div class="card">-->
+<!--  <h2>{{post.title}}</h2>-->
+<!--  <p>{{post.text}}</p>-->
+
+<!--  <button class="btn" (click)="removePost()">Remove Post</button>-->
+<!--</div>-->
+
+<section id="box-container">
+  <div class="container">
+    <div class="row">
+      <div class="card col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{post.priority}}</h6>
+          <p class="card-text">{{post.text}}</p>
+          <a href="#" class="card-link"><i class="far fa-edit"></i>Edit</a>
+          <a href="#" class="card-link" (click)="removePost()"><i class="far fa-trash-alt"></i>Remove</a>
+        </div>
+      </div>
+<!--      <div class="card" draggable="true">-->
+<!--        <div class="card-body">-->
+<!--          <h5>{{post.title}}</h5>-->
+<!--          <p class="card-text">-->
+<!--            {{post.text}}-->
+<!--          </p>-->
+<!--          <h6 class="card-subtitle mb-2 text-muted">{{post.priority}}</h6>-->
+<!--          <a href="#" class="card-link"><i class="far fa-edit"></i>Edit</a>-->
+<!--          <a href="#" class="card-link" (click)="removePost()"><i class="far fa-trash-alt"></i>Remove</a>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+  </div>
+</section>
